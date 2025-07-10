@@ -30,8 +30,8 @@ Partial Class Form3
         GroupBox1 = New GroupBox()
         ComboBox1 = New ComboBox()
         TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
         TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
         TextBox1 = New TextBox()
         GroupBox2 = New GroupBox()
         Button1 = New Button()
@@ -48,13 +48,13 @@ Partial Class Form3
         Label13 = New Label()
         TextBox11 = New TextBox()
         Label11 = New Label()
-        TextBox9 = New TextBox()
-        ComboBox2 = New ComboBox()
         TextBox6 = New TextBox()
+        ComboBox2 = New ComboBox()
+        TextBox8 = New TextBox()
         Label6 = New Label()
         Label7 = New Label()
-        TextBox7 = New TextBox()
-        TextBox8 = New TextBox()
+        TextBox9 = New TextBox()
+        TextBox5 = New TextBox()
         Label9 = New Label()
         Label10 = New Label()
         DataGridView1 = New DataGridView()
@@ -64,6 +64,8 @@ Partial Class Form3
         CGST = New DataGridViewTextBoxColumn()
         SGST = New DataGridViewTextBoxColumn()
         Total = New DataGridViewTextBoxColumn()
+        Label8 = New Label()
+        TextBox7 = New TextBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
@@ -133,10 +135,10 @@ Partial Class Form3
         ' 
         GroupBox1.Controls.Add(ComboBox1)
         GroupBox1.Controls.Add(TextBox4)
-        GroupBox1.Controls.Add(TextBox3)
+        GroupBox1.Controls.Add(TextBox2)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label3)
-        GroupBox1.Controls.Add(TextBox2)
+        GroupBox1.Controls.Add(TextBox3)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label5)
@@ -168,21 +170,21 @@ Partial Class Form3
         TextBox4.Size = New Size(77, 27)
         TextBox4.TabIndex = 4
         ' 
-        ' TextBox3
-        ' 
-        TextBox3.Location = New Point(257, 24)
-        TextBox3.Margin = New Padding(3, 4, 3, 4)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(77, 27)
-        TextBox3.TabIndex = 2
-        ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(463, 24)
+        TextBox2.Location = New Point(257, 24)
         TextBox2.Margin = New Padding(3, 4, 3, 4)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(77, 27)
-        TextBox2.TabIndex = 3
+        TextBox2.TabIndex = 2
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(463, 24)
+        TextBox3.Margin = New Padding(3, 4, 3, 4)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(77, 27)
+        TextBox3.TabIndex = 3
         ' 
         ' TextBox1
         ' 
@@ -194,6 +196,8 @@ Partial Class Form3
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.Controls.Add(Label8)
+        GroupBox2.Controls.Add(TextBox7)
         GroupBox2.Controls.Add(Button1)
         GroupBox2.Controls.Add(Label16)
         GroupBox2.Controls.Add(TextBox14)
@@ -208,13 +212,13 @@ Partial Class Form3
         GroupBox2.Controls.Add(Label13)
         GroupBox2.Controls.Add(TextBox11)
         GroupBox2.Controls.Add(Label11)
-        GroupBox2.Controls.Add(TextBox9)
-        GroupBox2.Controls.Add(ComboBox2)
         GroupBox2.Controls.Add(TextBox6)
+        GroupBox2.Controls.Add(ComboBox2)
+        GroupBox2.Controls.Add(TextBox8)
         GroupBox2.Controls.Add(Label6)
         GroupBox2.Controls.Add(Label7)
-        GroupBox2.Controls.Add(TextBox7)
-        GroupBox2.Controls.Add(TextBox8)
+        GroupBox2.Controls.Add(TextBox9)
+        GroupBox2.Controls.Add(TextBox5)
         GroupBox2.Controls.Add(Label9)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.ForeColor = Color.Navy
@@ -230,7 +234,7 @@ Partial Class Form3
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(298, 119)
+        Button1.Location = New Point(723, 120)
         Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
         Button1.Size = New Size(158, 44)
@@ -370,13 +374,13 @@ Partial Class Form3
         Label11.Text = "Rate"
         Label11.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' TextBox9
+        ' TextBox6
         ' 
-        TextBox9.Location = New Point(470, 20)
-        TextBox9.Margin = New Padding(3, 4, 3, 4)
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(77, 27)
-        TextBox9.TabIndex = 8
+        TextBox6.Location = New Point(470, 20)
+        TextBox6.Margin = New Padding(3, 4, 3, 4)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(77, 27)
+        TextBox6.TabIndex = 8
         ' 
         ' ComboBox2
         ' 
@@ -387,13 +391,13 @@ Partial Class Form3
         ComboBox2.Size = New Size(153, 28)
         ComboBox2.TabIndex = 6
         ' 
-        ' TextBox6
+        ' TextBox8
         ' 
-        TextBox6.Location = New Point(123, 127)
-        TextBox6.Margin = New Padding(3, 4, 3, 4)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(107, 27)
-        TextBox6.TabIndex = 16
+        TextBox8.Location = New Point(131, 129)
+        TextBox8.Margin = New Padding(3, 4, 3, 4)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(107, 27)
+        TextBox8.TabIndex = 16
         ' 
         ' Label6
         ' 
@@ -402,9 +406,9 @@ Partial Class Form3
         Label6.ForeColor = Color.MidnightBlue
         Label6.Location = New Point(14, 131)
         Label6.Name = "Label6"
-        Label6.Size = New Size(118, 23)
+        Label6.Size = New Size(105, 23)
         Label6.TabIndex = 1
-        Label6.Text = "Final Amount"
+        Label6.Text = "Dis Amount"
         Label6.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label7
@@ -419,21 +423,21 @@ Partial Class Form3
         Label7.Text = "Amount"
         Label7.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' TextBox7
+        ' TextBox9
         ' 
-        TextBox7.Location = New Point(643, 20)
-        TextBox7.Margin = New Padding(3, 4, 3, 4)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(77, 27)
-        TextBox7.TabIndex = 9
+        TextBox9.Location = New Point(643, 20)
+        TextBox9.Margin = New Padding(3, 4, 3, 4)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(77, 27)
+        TextBox9.TabIndex = 9
         ' 
-        ' TextBox8
+        ' TextBox5
         ' 
-        TextBox8.Location = New Point(320, 21)
-        TextBox8.Margin = New Padding(3, 4, 3, 4)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(77, 27)
-        TextBox8.TabIndex = 7
+        TextBox5.Location = New Point(320, 21)
+        TextBox5.Margin = New Padding(3, 4, 3, 4)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(77, 27)
+        TextBox5.TabIndex = 7
         ' 
         ' Label9
         ' 
@@ -515,6 +519,26 @@ Partial Class Form3
         Total.Name = "Total"
         Total.Width = 125
         ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
+        Label8.ForeColor = Color.MidnightBlue
+        Label8.Location = New Point(250, 130)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(118, 23)
+        Label8.TabIndex = 23
+        Label8.Text = "Final Amount"
+        Label8.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Location = New Point(378, 127)
+        TextBox7.Margin = New Padding(3, 4, 3, 4)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(77, 27)
+        TextBox7.TabIndex = 24
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
@@ -545,16 +569,16 @@ Partial Class Form3
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label14 As Label
@@ -566,7 +590,7 @@ Partial Class Form3
     Friend WithEvents Label13 As Label
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents Label17 As Label
@@ -579,4 +603,6 @@ Partial Class Form3
     Friend WithEvents CGST As DataGridViewTextBoxColumn
     Friend WithEvents SGST As DataGridViewTextBoxColumn
     Friend WithEvents Total As DataGridViewTextBoxColumn
+    Friend WithEvents Label8 As Label
+    Friend WithEvents TextBox7 As TextBox
 End Class
