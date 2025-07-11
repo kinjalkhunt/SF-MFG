@@ -34,11 +34,13 @@ Partial Class Form3
         TextBox3 = New TextBox()
         TextBox1 = New TextBox()
         GroupBox2 = New GroupBox()
+        Label8 = New Label()
+        TextBox7 = New TextBox()
         Button1 = New Button()
         Label16 = New Label()
-        TextBox14 = New TextBox()
-        Label17 = New Label()
         TextBox15 = New TextBox()
+        Label17 = New Label()
+        TextBox14 = New TextBox()
         Label14 = New Label()
         TextBox12 = New TextBox()
         Label15 = New Label()
@@ -64,8 +66,6 @@ Partial Class Form3
         CGST = New DataGridViewTextBoxColumn()
         SGST = New DataGridViewTextBoxColumn()
         Total = New DataGridViewTextBoxColumn()
-        Label8 = New Label()
-        TextBox7 = New TextBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
@@ -112,7 +112,7 @@ Partial Class Form3
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         Label4.ForeColor = Color.MidnightBlue
-        Label4.Location = New Point(565, 28)
+        Label4.Location = New Point(389, 59)
         Label4.Name = "Label4"
         Label4.Size = New Size(79, 23)
         Label4.TabIndex = 3
@@ -155,43 +155,53 @@ Partial Class Form3
         ' 
         ' ComboBox1
         ' 
+        ComboBox1.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        ComboBox1.ForeColor = Color.MidnightBlue
         ComboBox1.FormattingEnabled = True
         ComboBox1.Location = New Point(64, 79)
         ComboBox1.Margin = New Padding(3, 4, 3, 4)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(270, 28)
+        ComboBox1.Size = New Size(270, 31)
         ComboBox1.TabIndex = 5
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(641, 24)
+        TextBox4.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox4.ForeColor = Color.MidnightBlue
+        TextBox4.Location = New Point(469, 55)
         TextBox4.Margin = New Padding(3, 4, 3, 4)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(77, 27)
+        TextBox4.Size = New Size(289, 30)
         TextBox4.TabIndex = 4
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(257, 24)
+        TextBox2.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        TextBox2.ForeColor = Color.MidnightBlue
+        TextBox2.Location = New Point(262, 24)
         TextBox2.Margin = New Padding(3, 4, 3, 4)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(77, 27)
+        TextBox2.Size = New Size(77, 30)
         TextBox2.TabIndex = 2
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(463, 24)
+        TextBox3.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox3.ForeColor = Color.MidnightBlue
+        TextBox3.Location = New Point(469, 22)
         TextBox3.Margin = New Padding(3, 4, 3, 4)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(77, 27)
+        TextBox3.Size = New Size(289, 30)
         TextBox3.TabIndex = 3
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(64, 24)
+        TextBox1.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        TextBox1.ForeColor = Color.MidnightBlue
+        TextBox1.Location = New Point(74, 24)
         TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(77, 27)
+        TextBox1.Size = New Size(77, 30)
         TextBox1.TabIndex = 1
         ' 
         ' GroupBox2
@@ -200,9 +210,9 @@ Partial Class Form3
         GroupBox2.Controls.Add(TextBox7)
         GroupBox2.Controls.Add(Button1)
         GroupBox2.Controls.Add(Label16)
-        GroupBox2.Controls.Add(TextBox14)
-        GroupBox2.Controls.Add(Label17)
         GroupBox2.Controls.Add(TextBox15)
+        GroupBox2.Controls.Add(Label17)
+        GroupBox2.Controls.Add(TextBox14)
         GroupBox2.Controls.Add(Label14)
         GroupBox2.Controls.Add(TextBox12)
         GroupBox2.Controls.Add(Label15)
@@ -231,6 +241,28 @@ Partial Class Form3
         GroupBox2.TabStop = False
         GroupBox2.Text = "Fabric Detail"
         ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
+        Label8.ForeColor = Color.MidnightBlue
+        Label8.Location = New Point(250, 130)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(118, 23)
+        Label8.TabIndex = 23
+        Label8.Text = "Final Amount"
+        Label8.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox7.ForeColor = Color.MidnightBlue
+        TextBox7.Location = New Point(378, 127)
+        TextBox7.Margin = New Padding(3, 4, 3, 4)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(77, 30)
+        TextBox7.TabIndex = 17
+        ' 
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -238,7 +270,7 @@ Partial Class Form3
         Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
         Button1.Size = New Size(158, 44)
-        Button1.TabIndex = 17
+        Button1.TabIndex = 18
         Button1.Text = "Add"
         Button1.UseVisualStyleBackColor = True
         ' 
@@ -254,13 +286,15 @@ Partial Class Form3
         Label16.Text = "Value"
         Label16.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' TextBox14
+        ' TextBox15
         ' 
-        TextBox14.Location = New Point(784, 76)
-        TextBox14.Margin = New Padding(3, 4, 3, 4)
-        TextBox14.Name = "TextBox14"
-        TextBox14.Size = New Size(77, 27)
-        TextBox14.TabIndex = 15
+        TextBox15.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox15.ForeColor = Color.MidnightBlue
+        TextBox15.Location = New Point(784, 76)
+        TextBox15.Margin = New Padding(3, 4, 3, 4)
+        TextBox15.Name = "TextBox15"
+        TextBox15.Size = New Size(77, 30)
+        TextBox15.TabIndex = 15
         ' 
         ' Label17
         ' 
@@ -269,18 +303,20 @@ Partial Class Form3
         Label17.ForeColor = Color.MidnightBlue
         Label17.Location = New Point(586, 80)
         Label17.Name = "Label17"
-        Label17.Size = New Size(72, 23)
+        Label17.Size = New Size(67, 23)
         Label17.TabIndex = 20
-        Label17.Text = "SGST %"
+        Label17.Text = "SGST%"
         Label17.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' TextBox15
+        ' TextBox14
         ' 
-        TextBox15.Location = New Point(650, 76)
-        TextBox15.Margin = New Padding(3, 4, 3, 4)
-        TextBox15.Name = "TextBox15"
-        TextBox15.Size = New Size(77, 27)
-        TextBox15.TabIndex = 14
+        TextBox14.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox14.ForeColor = Color.MidnightBlue
+        TextBox14.Location = New Point(650, 76)
+        TextBox14.Margin = New Padding(3, 4, 3, 4)
+        TextBox14.Name = "TextBox14"
+        TextBox14.Size = New Size(77, 30)
+        TextBox14.TabIndex = 14
         ' 
         ' Label14
         ' 
@@ -296,11 +332,13 @@ Partial Class Form3
         ' 
         ' TextBox12
         ' 
-        TextBox12.Location = New Point(375, 78)
+        TextBox12.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox12.ForeColor = Color.MidnightBlue
+        TextBox12.Location = New Point(367, 78)
         TextBox12.Margin = New Padding(3, 4, 3, 4)
         TextBox12.Name = "TextBox12"
-        TextBox12.Size = New Size(77, 27)
-        TextBox12.TabIndex = 11
+        TextBox12.Size = New Size(77, 30)
+        TextBox12.TabIndex = 12
         ' 
         ' Label15
         ' 
@@ -316,10 +354,12 @@ Partial Class Form3
         ' 
         ' TextBox13
         ' 
+        TextBox13.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox13.ForeColor = Color.MidnightBlue
         TextBox13.Location = New Point(503, 76)
         TextBox13.Margin = New Padding(3, 4, 3, 4)
         TextBox13.Name = "TextBox13"
-        TextBox13.Size = New Size(77, 27)
+        TextBox13.Size = New Size(77, 30)
         TextBox13.TabIndex = 13
         ' 
         ' Label12
@@ -336,10 +376,12 @@ Partial Class Form3
         ' 
         ' TextBox10
         ' 
+        TextBox10.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox10.ForeColor = Color.MidnightBlue
         TextBox10.Location = New Point(67, 76)
         TextBox10.Margin = New Padding(3, 4, 3, 4)
         TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(77, 27)
+        TextBox10.Size = New Size(77, 30)
         TextBox10.TabIndex = 10
         ' 
         ' Label13
@@ -349,25 +391,27 @@ Partial Class Form3
         Label13.ForeColor = Color.MidnightBlue
         Label13.Location = New Point(295, 80)
         Label13.Name = "Label13"
-        Label13.Size = New Size(72, 23)
+        Label13.Size = New Size(67, 23)
         Label13.TabIndex = 12
-        Label13.Text = "CGST %"
+        Label13.Text = "CGST%"
         Label13.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' TextBox11
         ' 
+        TextBox11.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox11.ForeColor = Color.MidnightBlue
         TextBox11.Location = New Point(202, 76)
         TextBox11.Margin = New Padding(3, 4, 3, 4)
         TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(77, 27)
-        TextBox11.TabIndex = 12
+        TextBox11.Size = New Size(77, 30)
+        TextBox11.TabIndex = 11
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         Label11.ForeColor = Color.MidnightBlue
-        Label11.Location = New Point(417, 25)
+        Label11.Location = New Point(453, 25)
         Label11.Name = "Label11"
         Label11.Size = New Size(46, 23)
         Label11.TabIndex = 10
@@ -376,27 +420,33 @@ Partial Class Form3
         ' 
         ' TextBox6
         ' 
-        TextBox6.Location = New Point(470, 20)
+        TextBox6.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox6.ForeColor = Color.MidnightBlue
+        TextBox6.Location = New Point(506, 20)
         TextBox6.Margin = New Padding(3, 4, 3, 4)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(77, 27)
+        TextBox6.Size = New Size(77, 30)
         TextBox6.TabIndex = 8
         ' 
         ' ComboBox2
         ' 
+        ComboBox2.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        ComboBox2.ForeColor = Color.MidnightBlue
         ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(90, 20)
+        ComboBox2.Location = New Point(101, 20)
         ComboBox2.Margin = New Padding(3, 4, 3, 4)
         ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(153, 28)
+        ComboBox2.Size = New Size(153, 31)
         ComboBox2.TabIndex = 6
         ' 
         ' TextBox8
         ' 
+        TextBox8.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox8.ForeColor = Color.MidnightBlue
         TextBox8.Location = New Point(131, 129)
         TextBox8.Margin = New Padding(3, 4, 3, 4)
         TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(107, 27)
+        TextBox8.Size = New Size(107, 30)
         TextBox8.TabIndex = 16
         ' 
         ' Label6
@@ -406,9 +456,9 @@ Partial Class Form3
         Label6.ForeColor = Color.MidnightBlue
         Label6.Location = New Point(14, 131)
         Label6.Name = "Label6"
-        Label6.Size = New Size(105, 23)
+        Label6.Size = New Size(100, 23)
         Label6.TabIndex = 1
-        Label6.Text = "Dis Amount"
+        Label6.Text = "DisAmount"
         Label6.TextAlign = ContentAlignment.MiddleRight
         ' 
         ' Label7
@@ -416,7 +466,7 @@ Partial Class Form3
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
         Label7.ForeColor = Color.MidnightBlue
-        Label7.Location = New Point(567, 24)
+        Label7.Location = New Point(603, 24)
         Label7.Name = "Label7"
         Label7.Size = New Size(75, 23)
         Label7.TabIndex = 2
@@ -425,18 +475,22 @@ Partial Class Form3
         ' 
         ' TextBox9
         ' 
-        TextBox9.Location = New Point(643, 20)
+        TextBox9.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox9.ForeColor = Color.MidnightBlue
+        TextBox9.Location = New Point(679, 20)
         TextBox9.Margin = New Padding(3, 4, 3, 4)
         TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(77, 27)
+        TextBox9.Size = New Size(77, 30)
         TextBox9.TabIndex = 9
         ' 
         ' TextBox5
         ' 
-        TextBox5.Location = New Point(320, 21)
+        TextBox5.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        TextBox5.ForeColor = Color.MidnightBlue
+        TextBox5.Location = New Point(356, 21)
         TextBox5.Margin = New Padding(3, 4, 3, 4)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(77, 27)
+        TextBox5.Size = New Size(77, 30)
         TextBox5.TabIndex = 7
         ' 
         ' Label9
@@ -456,7 +510,7 @@ Partial Class Form3
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.MidnightBlue
-        Label10.Location = New Point(263, 25)
+        Label10.Location = New Point(299, 25)
         Label10.Name = "Label10"
         Label10.Size = New Size(58, 23)
         Label10.TabIndex = 0
@@ -469,11 +523,11 @@ Partial Class Form3
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {mtr, Amount, Discount, CGST, SGST, Total})
         DataGridView1.GridColor = SystemColors.InactiveCaption
-        DataGridView1.Location = New Point(915, 21)
+        DataGridView1.Location = New Point(909, 16)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(836, 188)
-        DataGridView1.TabIndex = 11
+        DataGridView1.Size = New Size(618, 632)
+        DataGridView1.TabIndex = 19
         ' 
         ' mtr
         ' 
@@ -519,40 +573,23 @@ Partial Class Form3
         Total.Name = "Total"
         Total.Width = 125
         ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold)
-        Label8.ForeColor = Color.MidnightBlue
-        Label8.Location = New Point(250, 130)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(118, 23)
-        Label8.TabIndex = 23
-        Label8.Text = "Final Amount"
-        Label8.TextAlign = ContentAlignment.MiddleRight
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Location = New Point(378, 127)
-        TextBox7.Margin = New Padding(3, 4, 3, 4)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(77, 27)
-        TextBox7.TabIndex = 24
-        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1900, 700)
+        ClientSize = New Size(1539, 700)
         Controls.Add(DataGridView1)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        ForeColor = Color.MidnightBlue
+        FormBorderStyle = FormBorderStyle.Fixed3D
         Margin = New Padding(3, 4, 3, 4)
         MaximizeBox = False
         MinimizeBox = False
         Name = "Form3"
+        SizeGripStyle = SizeGripStyle.Hide
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form3"
+        Text = "Fabric Entry"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)
@@ -592,9 +629,9 @@ Partial Class Form3
     Friend WithEvents Label11 As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label17 As Label
     Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents TextBox14 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents mtr As DataGridViewTextBoxColumn
