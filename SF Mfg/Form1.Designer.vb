@@ -33,7 +33,7 @@ Partial Class swissfort
         ' 
         Button1.BackColor = SystemColors.ActiveCaption
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(14, 73)
+        Button1.Location = New Point(104, 142)
         Button1.Name = "Button1"
         Button1.Size = New Size(233, 54)
         Button1.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class swissfort
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlLight
-        ClientSize = New Size(349, 166)
+        ClientSize = New Size(349, 208)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox2)
