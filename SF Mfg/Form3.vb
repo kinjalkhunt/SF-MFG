@@ -55,6 +55,16 @@
         ' Set current date and time in 12-hour format in TextBox3 and TextBox4
         TextBox3.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")
         TextBox4.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")
+
+        ' Block specified textboxes
+        TextBox3.ReadOnly = True
+        TextBox4.ReadOnly = True
+        TextBox7.ReadOnly = True
+        TextBox8.ReadOnly = True
+        TextBox9.ReadOnly = True
+        TextBox11.ReadOnly = True
+        TextBox13.ReadOnly = True
+        TextBox15.ReadOnly = True
     End Sub
 
     Private Sub AddHandlerToInputs(ctrl As Control)
