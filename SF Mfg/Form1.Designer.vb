@@ -51,6 +51,7 @@ Partial Class swissfort
         ' 
         TextBox2.Location = New Point(181, 47)
         TextBox2.Name = "TextBox2"
+        TextBox2.PasswordChar = "*"c
         TextBox2.Size = New Size(121, 27)
         TextBox2.TabIndex = 2
         ' 
