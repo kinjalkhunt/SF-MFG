@@ -39,8 +39,7 @@ Partial Class Form2
         MenuStrip1.Items.AddRange(New ToolStripItem() {MasterToolStripMenuItem, TransactionToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(7, 3, 0, 3)
-        MenuStrip1.Size = New Size(914, 30)
+        MenuStrip1.Size = New Size(800, 24)
         MenuStrip1.TabIndex = 0
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -48,54 +47,53 @@ Partial Class Form2
         ' 
         MasterToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PartyMasterToolStripMenuItem, EmployeeMasterToolStripMenuItem})
         MasterToolStripMenuItem.Name = "MasterToolStripMenuItem"
-        MasterToolStripMenuItem.Size = New Size(68, 24)
+        MasterToolStripMenuItem.Size = New Size(55, 20)
         MasterToolStripMenuItem.Text = "Master"
         ' 
         ' PartyMasterToolStripMenuItem
         ' 
         PartyMasterToolStripMenuItem.Name = "PartyMasterToolStripMenuItem"
-        PartyMasterToolStripMenuItem.Size = New Size(207, 26)
+        PartyMasterToolStripMenuItem.Size = New Size(180, 22)
         PartyMasterToolStripMenuItem.Text = "Party Master"
         ' 
         ' EmployeeMasterToolStripMenuItem
         ' 
         EmployeeMasterToolStripMenuItem.Name = "EmployeeMasterToolStripMenuItem"
-        EmployeeMasterToolStripMenuItem.Size = New Size(207, 26)
+        EmployeeMasterToolStripMenuItem.Size = New Size(180, 22)
         EmployeeMasterToolStripMenuItem.Text = "Employee Master"
         ' 
         ' TransactionToolStripMenuItem
         ' 
         TransactionToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {FabricEntryToolStripMenuItem, CuttingEntryToolStripMenuItem, WorkEntryToolStripMenuItem})
         TransactionToolStripMenuItem.Name = "TransactionToolStripMenuItem"
-        TransactionToolStripMenuItem.Size = New Size(98, 24)
+        TransactionToolStripMenuItem.Size = New Size(79, 20)
         TransactionToolStripMenuItem.Text = "Transaction"
         ' 
         ' FabricEntryToolStripMenuItem
         ' 
         FabricEntryToolStripMenuItem.Name = "FabricEntryToolStripMenuItem"
-        FabricEntryToolStripMenuItem.Size = New Size(224, 26)
+        FabricEntryToolStripMenuItem.Size = New Size(144, 22)
         FabricEntryToolStripMenuItem.Text = "Fabric Entry"
         ' 
         ' CuttingEntryToolStripMenuItem
         ' 
         CuttingEntryToolStripMenuItem.Name = "CuttingEntryToolStripMenuItem"
-        CuttingEntryToolStripMenuItem.Size = New Size(224, 26)
+        CuttingEntryToolStripMenuItem.Size = New Size(144, 22)
         CuttingEntryToolStripMenuItem.Text = "Cutting Entry"
         ' 
         ' WorkEntryToolStripMenuItem
         ' 
         WorkEntryToolStripMenuItem.Name = "WorkEntryToolStripMenuItem"
-        WorkEntryToolStripMenuItem.Size = New Size(224, 26)
+        WorkEntryToolStripMenuItem.Size = New Size(144, 22)
         WorkEntryToolStripMenuItem.Text = "Work Entry"
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(914, 600)
+        ClientSize = New Size(800, 450)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
-        Margin = New Padding(3, 4, 3, 4)
         Name = "Form2"
         Text = "Swissfort Mfg."
         WindowState = FormWindowState.Maximized
