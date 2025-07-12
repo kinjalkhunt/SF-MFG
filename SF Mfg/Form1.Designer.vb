@@ -33,7 +33,7 @@ Partial Class swissfort
         ' 
         Button1.BackColor = SystemColors.ActiveCaption
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(104, 142)
+        Button1.Location = New Point(57, 103)
         Button1.Name = "Button1"
         Button1.Size = New Size(233, 54)
         Button1.TabIndex = 3
@@ -42,16 +42,16 @@ Partial Class swissfort
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(14, 44)
+        TextBox1.Location = New Point(35, 47)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
+        TextBox1.Size = New Size(116, 27)
         TextBox1.TabIndex = 1
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(147, 44)
+        TextBox2.Location = New Point(181, 47)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
+        TextBox2.Size = New Size(121, 27)
         TextBox2.TabIndex = 2
         ' 
         ' Label1
@@ -59,9 +59,9 @@ Partial Class swissfort
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.GrayText
-        Label1.Location = New Point(14, 16)
+        Label1.Location = New Point(35, 16)
         Label1.Name = "Label1"
-        Label1.Size = New Size(94, 21)
+        Label1.Size = New Size(116, 28)
         Label1.TabIndex = 3
         Label1.Text = "User Name"
         ' 
@@ -69,19 +69,19 @@ Partial Class swissfort
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = SystemColors.HotTrack
-        Label2.Location = New Point(147, 16)
+        Label2.ForeColor = SystemColors.ControlDarkDark
+        Label2.Location = New Point(189, 16)
         Label2.Name = "Label2"
-        Label2.Size = New Size(82, 21)
+        Label2.Size = New Size(101, 28)
         Label2.TabIndex = 4
         Label2.Text = "Password"
         ' 
         ' swissfort
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(9.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlLight
-        ClientSize = New Size(349, 208)
+        ClientSize = New Size(349, 173)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox2)
